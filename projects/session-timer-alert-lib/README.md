@@ -74,7 +74,6 @@ export class AppComponent {
 
 ```
 
-
 ### app.component.html - Bind the tag in your component template
 
 ```html
