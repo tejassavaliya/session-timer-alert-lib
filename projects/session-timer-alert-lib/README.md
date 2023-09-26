@@ -74,6 +74,19 @@ export class AppComponent {
 
 ```
 
+
+### app.component.html - Bind the tag in your component template
+
+```html
+
+<lib-session-timer-alert-lib
+    [totalDurationminutes]="10"
+    [warningDurationMinutes]="1"
+    [isShowTimer]="true"
+></lib-session-timer-alert-lib>
+
+```
+
 In the above example, I have invoked the `sessionLogout` Subject when getting notified from Library when timer gone completed and subscribed to the observable, once the user is idle for one minute then the subscribe method will get invoked with the `isTimedComplted` parameter's value (which is a boolean) as `true`.
 
 By checking whether the `isTimedComplted` is true or not, you can do your any action and logout your application.
